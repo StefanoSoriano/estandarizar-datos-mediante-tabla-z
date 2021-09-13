@@ -11,6 +11,11 @@ BEGIN
      DROP FUNCTION DBO.FN_DNE
 END;
 GO
+
+```
+
+
+```sql
 CREATE FUNCTION FN_DNE(@Z FLOAT,@Y FLOAT)
 RETURNS NVARCHAR(174)
 AS 
@@ -79,6 +84,9 @@ Intervalo de Confianza del:'+'
 RETURN @S
 END;
 GO
+```
+
+```sql
 
 DECLARE @i AS FLOAT, @j AS FLOAT 
 SET @i = 1.0
